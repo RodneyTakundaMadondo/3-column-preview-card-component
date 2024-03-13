@@ -1,0 +1,93 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 65%;
+  max-width: 1200px;
+  margin: 10vh auto;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.inner-container {
+  padding: 3rem 2rem 4rem 3.5rem;
+  position: relative;
+}
+
+.sedans {
+  background: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 7rem;
+}
+
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.learn-button {
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  color: black;
+  mix-blend-mode: screen;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 4rem;
+  transition: 0.5s ease-in-out;
+  white-space: nowrap;
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  position: absolute;
+  bottom: 50px;
+}
+
+.learn-button:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 1090px) {
+  .container {
+    flex-direction: column;
+    min-width: 250px;
+  }
+  .flex {
+    margin-bottom: 4.5rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
